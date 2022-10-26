@@ -1,0 +1,38 @@
+.outlined{
+    background: #FF5C35;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.outlined:hover{
+    background-color: #ffcec2;
+}
+.loginGoogle{
+    position: relative;
+    background: #5886d4;
+    border-radius: 0.1875rem;
+    border: none;
+    clear: both;
+    color: #fff;
+    width: 100%;
+    font-weight: 500; cursor: pointer;
+    height: 40px;
+}
+.loginGoogle:hover {
+     background: #4776c4;
+     color: #fff;
+ }.googleIcon {
+      position: absolute;
+      left: 1px;
+      top: 2px;
+      height: 92%;
+      background-color: white;
+  }
+.loginWithGoogle,
+.loginWithSSO {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}

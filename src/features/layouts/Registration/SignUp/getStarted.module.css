@@ -1,0 +1,59 @@
+.getStarted {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "Nunito", sans-serif;
+}
+
+.getStartedContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconDiv {
+    width: 100%;
+    margin-top: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.formSide{
+    width: 100%;
+}
+.formSide > h1 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.subTitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: #33475b;
+    line-height: 24px;
+    font-weight: 400;
+  margin-bottom: 20px;
+}
+.other {
+    color: rgb(81, 111, 144);
+    margin: 32px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.other::before,.other::after{
+    content: "";
+    border-top: 1px solid rgb(203, 214, 226);
+    margin: 0px 15px 0px 0px;
+    flex: 1 0 20px;
+}
+.loginButton > div{
+    width: 80% !important;
+}
