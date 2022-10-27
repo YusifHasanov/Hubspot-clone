@@ -1,0 +1,200 @@
+.willLoveContainer {
+    padding: 70px 0;
+    background-color: #F6F9FC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.willLoveHeader {
+    padding: 0 1.25rem;
+    width: 865px;
+    margin-bottom: 56px;
+}
+
+.willLoveHeader > h2 {
+    margin-bottom: 1.875rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.38;
+}
+
+.willLoveHeader > p {
+    margin-top: 2.5rem;
+    padding: 0;
+    text-align: left;
+    font-size: 1rem;
+
+}
+
+.willLoveHeader > .buttons {
+    margin-top: 20px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons > .filled, .outlined {
+    font-size: .875rem;
+    padding: 0.4rem 1.7rem;
+    border-radius: 0.1875rem;
+    transition: .3s ease-in-out;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0 8px;
+}
+
+.buttons > .filled {
+    border: 1px solid transparent;
+    background-color: #ff5c35;
+    color: #fff;
+}
+
+.buttons > .filled:hover {
+    background-color: #ffcec2;;
+}
+
+.buttons > .outlined {
+    background-color: transparent;
+    border: 1px solid #ff5c35;
+    color: #ff5c35;
+}
+
+.buttons > .outlined:hover {
+    background-color: #ffebe6;;
+}
+
+.willLoveCards {
+    max-width: 1080px;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.card {
+    padding: 2rem;
+    width: calc(50% - 1rem);
+    backface-visibility: hidden;
+    background: #fff;
+    border-width: 0;
+    box-shadow: 0 0 11px #eaf0f6;
+    display: flex;
+    margin-right: 0;
+    transition: .3s ease-in-out;
+    border-radius: 3px;
+}
+
+.card:hover {
+    box-shadow: 0 10px 50px -5px rgb(46 71 93 / 12%);
+    transform: scale(1.014);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+}
+
+.cardHeader > .headerIcon {
+    width: 30px;
+    height: auto;
+    margin-right: 0.625rem;
+    display: inline-block;
+}
+
+.cardHeader > h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.42;
+}
+
+.cardHeader > h3 > sup {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.cardMain {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardMain > .mainText {
+    padding-bottom: 1.5rem;
+    text-align: left;
+    font-size: .875rem;
+    font-weight: 300;
+    line-height: 1.75;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.cardFeatures {
+    border-top: 1px solid #b6c7d6;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardFeatures > p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.75;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.cardFeatures > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cardFeatures > ul > li {
+    margin-right: 1.25rem;
+    font-size: .75rem;
+    font-weight: 500;
+    margin-bottom: 0.3125rem;
+    display: flex;
+    align-items: center;
+}
+
+.checkIcon {
+    color: #FF5C35;
+    margin-right: 0.375rem;
+    font-size: 22px;
+}
+
+.buttonBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.25rem;
+    transition: transform .3s;
+}
+
+.buttonBox > button {
+    font-size: 1rem;
+    background-color: #ff5c35;
+    border-color: transparent;
+    padding: 4px 0;
+    color: #fff;
+    border-radius: 3px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color .15s linear, color .15s linear;
+}
+
+.buttonBox > button:hover {
+    background-color: #ffcec2;
+}
+
+@media screen and  (min-width: 1250px) {
+    .card {
+        width: calc(33% - 1rem);
+    }
+
+}

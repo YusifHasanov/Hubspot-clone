@@ -1,0 +1,77 @@
+.growingContainer {
+    padding: 64px 16px;
+}
+
+.growing {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    margin-right: 25px;
+    max-width: 620px;
+}
+
+.content > h2 {
+    margin-top: 16px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.42;
+}
+
+.content > p {
+    margin-top: 16px;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.75;
+    margin-bottom: 1em;
+}
+
+.buttons {
+    margin-top: 24px;
+}
+
+.buttons > .filled, .outlined {
+    font-size: 1.125rem;
+    line-height: 1.78;
+    padding: 1rem 2.5rem;
+    transition: background-color .15s linear,color .15s linear;
+    font-weight: 500;
+    cursor: pointer;
+border-radius: 3px;
+}
+
+.buttons > .filled{
+    background-color: #ff5c35;
+    border-color: transparent;
+    color: #fff;
+    margin-right: 15px;
+}
+.buttons > .outlined{
+    background-color: #fff;
+    color: #ff5c35;
+    border: 1px solid #ff5c35;
+}
+.buttons > .filled:hover{
+    background-color: #ffcec2;
+}
+.buttons > .outlined:hover{
+    background-color: #ffebe6;
+}
+.content > span{
+    font-size: .875rem;
+    line-height: 1.57;
+    display: block;
+    margin-top: 15px;
+}
+.image  {
+    width: 340px;
+}
+.image >img{
+    width: 100%;
+    height: 100%;
+}

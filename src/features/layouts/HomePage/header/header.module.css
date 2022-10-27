@@ -1,0 +1,162 @@
+.headerContainer {
+    padding-left: calc((100% - 1080px) / 2);
+    padding-right: calc((100% - 1080px) / 2);
+
+    background: linear-gradient(90deg, #d44325 0, #ff5c35 50%, #ff5c35 51%, #ff5c35);
+    overflow: hidden;
+}
+
+.headerContent {
+    display: flex;
+    padding: 104px 15px;
+    flex-direction: column;
+
+}
+
+.contentSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+
+}
+
+.imageSide {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.imageBox {
+    width: 780px;
+
+}
+
+.contentSubHeader {
+    margin-top: 1.25rem;
+    font-size: .875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+
+}
+
+.contentHeader {
+
+    font-family: Queens Medium, serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 1.28;
+}
+
+.contentText {
+    font-weight: 500;
+    line-height: 1.75;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1rem;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.8rem 0 1rem;
+}
+
+.buttonFill, .buttonOutlined {
+    font-size: 1.125rem;
+    line-height: 1.78;
+    padding: 1rem 2.5rem;
+    font-weight: 500;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 235px;
+    transition: background-color .15s linear, color .15s linear;
+}
+
+.buttonFill {
+    background-color: #fff;
+    border: none;
+    color: #2e475d;
+}
+
+.buttonFill:hover {
+    background-color: #ffcec2;
+}
+
+.buttonOutlined {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+.buttonOutlined:hover {
+    background-color: #d44325;
+
+}
+
+.afterButtons {
+    font-size: .875rem;
+    font-weight: 500;
+    max-width: 17rem;
+    text-align: left;
+    white-space: break-spaces;
+    margin: 0;
+}
+
+.imagebox {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerBackground {
+    width: 85%;
+
+}
+
+@media screen and (min-width: 768px) {
+    .headerContent {
+        flex-direction: row;
+
+    }
+
+    .contentHeader {
+        font-size: 3.75rem;
+        line-height: 1.13;
+    }
+
+    .contentSide {
+        width: 55%;
+    }
+
+    .imageSide {
+        width: 45%;
+        display: block;
+    }
+
+    .imagebox {
+        width: 780px !important;
+
+    }
+
+    .headerBackground {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1115px) {
+    .headerContent {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

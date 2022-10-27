@@ -1,0 +1,258 @@
+.bottomNavi {
+    display: none;
+}
+@media screen and (min-width: 851px) {
+    .bottomNavi {
+        position: sticky;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #2e475d;
+        top: 0;
+        background-color: #fff;
+        margin-top: -1px;
+        box-shadow: 0 2px 4px rgb(33 51 67 / 12%);
+        padding: 5px 10px;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .submenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-left: 3rem;
+
+    }
+
+    .submenu > ul {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .submenu > ul > li {
+        padding: 12px 16px 20px 16px;
+        font-size: 18px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .submenu > ul > li:hover {
+        color: #0b8484;
+
+    }
+.leftList>  li:hover{   text-decoration: underline;
+
+}
+    .arrow {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+
+    .software {
+        position: relative;
+    }
+
+    .software:hover .softwareSubmenu {
+        display: flex;
+        z-index: 999;
+    }
+
+    .softwareSubmenu {
+
+        border: 1px solid #b6c7d6;
+        border-radius: 0.1875rem;
+        box-shadow: 0 1px 24px rgb(33 51 67 / 12%);
+        max-height: calc(100vh - 100%);
+        overflow: hidden;
+        position: absolute;
+        background: #f6f9fc;
+        display: none;
+        top:calc(100% + 7px);
+
+        left: -100%;
+        flex-direction: column;
+        width: 1050px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .headerContainer h2 {
+        font-size: 18px;
+    }
+
+    .headerContainer > p {
+        font-size: 14px;
+        color: #2e475d;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .buttonsContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 65%;
+
+
+    }
+
+    .buttonsContainer > button {
+        padding: 0.75rem 4rem;
+        background: #fff;
+        border: 1px solid #eaf0f6;
+        margin: 0.5rem;
+        display: flex;
+        align-items: center;
+        color: #0b8484;
+        cursor: pointer;
+        font-size: 14px;
+
+
+    }
+
+    .buttonsContainer > button:hover {
+        text-decoration: underline;
+
+    }
+
+    .boxesContainer {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .gridBox {
+        background: #fff;
+        border: 1px solid #eaf0f6;
+        padding: 16px;
+        margin: 0.5rem;
+        display: flex;
+        cursor: pointer;
+    }
+
+    .gridBox:hover {
+        box-shadow: rgba(46, 71, 93, .12) 0 0 10px -3px;
+    }
+
+    .gridBox > .contentContainer {
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+    }
+
+    .gridBox > .contentContainer > h4 {
+        font-size: 1rem;
+        margin: 0;
+        padding-bottom: 0.5rem;
+        color: #2e475d;
+    }
+
+    .gridBox > .contentContainer > p {
+        font-size: .875rem;
+        margin: 0;
+        font-weight: 400;
+        line-height: 1.61;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: #2e475d;
+    }
+
+    .gridBox > .contentContainer > p > span {
+        color: #0b8484;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .gridBox > .contentContainer > p > span:hover {
+        text-decoration: underline;
+    }
+
+    .gridBox > .iconBox {
+        margin-right: 10px;
+    }
+
+    .footer {
+        width: 100%;
+        background-color: #fff;
+        padding: 16px 96px;
+        border-top: 1px solid #eaf0f6;
+    }
+
+    .footer > h3 {
+        font-size: 1rem;
+        margin: 0;
+        padding-bottom: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer > p {
+        font-size: .75rem;
+        color: #2e475d;
+        margin: 0;
+    }
+
+    .footer > p > span {
+        color: #0b8484;
+        font-weight: 600;
+    }
+
+    .footer > p > span:hover {
+        text-decoration: underline;
+    }
+
+    .sublistButton, .sublistButtonFill {
+        padding: 5px 22px;
+        font-size: 14px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .sublistButtonFill {
+        background: #FF5C35;
+        color: #fff;
+        border:none;
+    }
+    .sublistButtonFill:hover{
+        background-color: #ffcec2;
+
+    }
+
+    .sublistButton {
+        border: 1px solid #FF5C35 ;
+        background-color: #fff;
+        color: #FF5C35;
+    }
+    .sublistButton:hover{
+        background-color: #FEEAE5;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .bottomNavi {
+        padding-left: calc((100% - 1080px) / 2);
+        padding-right: calc((100% - 1080px) / 2);
+    }
+
+}

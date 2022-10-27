@@ -1,0 +1,47 @@
+.customersContainers {
+    padding-top: 100px;
+}
+
+.content {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.text {
+    margin-right: 1rem;
+    width: 34%;
+}
+
+.text > h2 {
+    font-size: 2.25rem;
+    margin: 0 0 5px;
+}
+
+.text > p {
+    font-size: 1.125rem;
+    letter-spacing: .02rem;
+    margin-top: 0;
+
+}
+
+.icons {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 600px;
+}
+.iconbox{
+    padding: 20px;
+    flex: 1 1 25%;
+}
+.iconbox > img{
+    width: 100%;
+    height: 100%;
+}

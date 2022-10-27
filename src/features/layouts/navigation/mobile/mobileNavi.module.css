@@ -1,0 +1,168 @@
+.mobileNaviContainer {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 1px 5px 0 rgba(33, 51, 67, 0.12);
+    padding: 0.5rem 1rem;
+    flex-wrap: nowrap;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+}
+
+.barICon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    transition: all 0.5s ease;
+
+}
+
+.big {
+    background-color: #2e475d;
+    border-radius: 1rem;
+    width: 40px;
+    height: 0.2rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.small {
+    background-color: #2e475d;
+    border-radius: 1rem;
+    width: 30px;
+    height: 0.2rem;
+}
+
+.mainSideBar {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    position: fixed;
+    background-color: #fff;
+    left: 0;
+    top: 50px;
+
+}
+
+.mainMenuItem {
+    border: 1px solid #b6c7d6;
+    border-radius: .1875rem;
+    padding: 16px;
+    margin: 1rem;
+    background: #f6f9fc;
+    box-shadow: rgba(33, 51, 67, 0.12) 0px 1px 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menuArrow {
+    margin-right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.buttons {
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filled, .outlined {
+    border-radius: 3px;
+    width: 49%;
+    padding: 2px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.filled {
+    background-color: #FF5C35;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.filled:hover {
+    background-color: #ffcec2;
+}
+
+.outlined {
+    background-color: #fff;
+    color: #FF5C35;
+    border: 1px solid #FF5C35;
+}
+
+.outlined:hover {
+    background-color: #ffcec2;
+}
+
+.sidebarFooter {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.englishContact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.englishContact > div {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.englishContact > div:nth-child(1) {
+    padding-right: 100px;
+}
+.second {
+    display: flex;
+align-items: center;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+.englishContact > div > .icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.second > div:nth-child(1) {
+    padding-right: 50px;
+}
+.englishContact::after {
+    position: relative;
+    content: "";
+    background-color: #b6c7d6;
+    width: 2px;
+    left: 0;
+    height: 2rem;
+}
+@media screen and (min-width: 851px) {
+    .mobileNaviContainer {
+        display: none;
+    }
+}
