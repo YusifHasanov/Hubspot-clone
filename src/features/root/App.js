@@ -4,7 +4,7 @@ import Dashboard from "./Dashboard";
 const App = () => {
   return (
       <div className={styles.App}>
-          //Dashboard
+
            <Dashboard/>
       </div>
   );
