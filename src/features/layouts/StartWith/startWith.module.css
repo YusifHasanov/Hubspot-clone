@@ -1,0 +1,119 @@
+.header {
+    background-color: #3e5974;
+    background-image: none;
+    margin-bottom: 32px;
+}
+
+.headerContainer {
+    background-image: url(//cdn2.hubspot.net/hubfs/53/assets/hubspot.com/_style-guide/sword-sprocket/circleLight1.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    -webkit-animation: floatCircle 20s linear infinite;
+    animation: floatCircle 20s linear infinite;
+    padding: 4rem 0;
+}
+
+@keyframes floatCircle {
+    0% {
+        background-position: 0% -100%;
+    }
+    100% {
+        background-position: 0% 200%;
+    }
+}
+
+@keyframes floatCircleTablet {
+    0% {
+        background-position: 0% -200%;
+    }
+    100% {
+        background-position: 0% 300%;
+    }
+}
+
+.headerContent {
+    /*padding-left: calc((100% - 1080px) / 2);*/
+    /*padding-right: calc((100% - 1080px) / 2);*/
+    color: #fff;
+    text-align: left;
+    padding: 0 48px 0 16px;
+}
+
+.name {
+    text-transform: capitalize;
+}
+
+.headerContent > h1 {
+    position: relative;
+
+}
+
+sup {
+    font-size: small;
+    position: relative;
+    top: -20px;
+
+}
+
+.headerContent > p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.75;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.free {
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.cartTitle {
+    background-image: linear-gradient(45deg, #ff5c35, #ff8933);
+    padding: 30px 15px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+
+.cartTitle > h4 {
+    font-size: 1.375rem;
+    font-weight: 500;
+    line-height: 1.45;
+
+}
+
+.cartDescription {
+    text-align: center;
+    padding: 36px 0;
+}
+
+.cartDescription > p {
+    padding: 0 62px;
+    margin: 0;
+
+    line-height: 1.75;
+    font-size: 1rem;
+    font-weight: 500;
+}

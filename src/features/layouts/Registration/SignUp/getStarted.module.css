@@ -22,11 +22,16 @@
     align-items: center;
     justify-content: flex-end;
 }
-.formSide{
-    width: 100%;
+
+.formSide {
+    max-width: 480px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
 .formSide > h1 {
-    font-weight: 700;
+    font-weight: 800;
     font-size: 30px;
 }
 
@@ -39,8 +44,9 @@
     color: #33475b;
     line-height: 24px;
     font-weight: 400;
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
+
 .other {
     color: rgb(81, 111, 144);
     margin: 32px 0;
@@ -48,12 +54,211 @@
     align-items: center;
     justify-content: center;
 }
-.other::before,.other::after{
+
+.other::before, .other::after {
     content: "";
     border-top: 1px solid rgb(203, 214, 226);
     margin: 0px 15px 0px 0px;
     flex: 1 0 20px;
 }
-.loginButton > div{
-    width: 80% !important;
+
+.withGoogle {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.emailInput,
+.errorEmail {
+    width: 100%;
+    border-color: currentcolor currentcolor rgb(0, 164, 189) !important;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-image: none 100% / 1 / 0 stretch;
+    border-left: medium none !important;
+    border-right: medium none !important;
+    border-top: medium none !important;
+    padding: 14px 10px 18px 0;
+    display: block;
+    height: 40px;
+    line-height: 22px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #2b3e64;
+}
+
+.emailInput:focus {
+    outline: none;
+}
+
+.errorEmail:focus {
+    outline: none;
+}
+
+.errorEmail {
+    border-color: #f2545b !important;
+}
+
+.error {
+    text-align: left;
+    font-weight: 400;
+    color: #f2545b;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.verified {
+    width: 100%;
+    padding-top: 32px;
+}
+
+.verifiedButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #ff7a59;
+    padding: 11px 24px;
+    color: #fff;
+    border: 1px solid #ff7a59;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all .15s ease-out;
+    font-weight: 500;
+}
+
+.verifiedButton:hover {
+    background-color: #ff8f73;
+    border-color: #ff8f73;
+    color: #fff;
+}
+
+.verifiedButton:disabled {
+    cursor: not-allowed;
+    background-color: #eaf0f6 !important;
+    border-color: #eaf0f6 !important;
+    color: #b0c1d4 !important;
+    border: none;
+    font-weight: 500;
+    padding: 11px 24px;
+}
+
+.arrowIcon {
+    font-size: 25px;
+}
+
+.verifiedContainer {
+    margin-top: 20px;
+    text-align: center;
+    width: 90%;
+}
+
+.verifiedContainer > small {
+    color: #516f90;
+}
+
+.policyLink {
+    font-weight: 700;
+    color: #0091ae;
+    cursor: pointer;
+}
+
+.policyLink:hover {
+    text-decoration: underline;
+    color: #007a8c;
+}
+
+/*image side*/
+.imageSide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 3px solid #eaf0f6;
+    padding-top: 1.875rem;
+
+}
+
+.imageHeader {
+    text-align: center;
+    color: #33475b;
+}
+
+.imageHeader > h4 {
+    margin-bottom: 16px;
+    margin-top: 0;
+    display: block;
+    line-height: normal;
+    text-transform: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.imageHeader > div {
+    font-weight: 400;
+    font-size: 17px;
+
+}
+
+.imageBox {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.desktopIconDiv {
+    display: none;
+}
+
+@media screen and (min-width: 770px) {
+    .formSide {
+        max-width: 560px;
+    }
+}
+
+@media screen and (min-width: 1026px) {
+    .iconDiv {
+        display: none;
+    }
+
+    .getStartedContainer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 55px;
+    }
+
+    .imageSide {
+        flex-direction: column-reverse;
+        padding-top: 0;
+        border: none;
+        max-height: 450px;
+    }
+
+    .imageBox {
+        min-height: 300px;
+        height: 40vh;
+    }
+
+    .desktopIconDiv {
+        padding-top: 32px;
+        padding-left: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .desktopIcon{
+        width: 8rem;
+    }
+    .formSide > h1 {
+        font-weight:900;
+        font-size: 34px;
+    }
+    .subTitle{
+        display: none;
+    }
+
+    .withGoogle {
+        width: 80%;
+    }
 }

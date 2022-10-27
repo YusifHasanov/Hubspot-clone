@@ -1,5 +1,5 @@
 const Regex = {
-  // Regex for parsing a string argument
+   
   email: (email) => {
     return String(email)
       .toLowerCase()

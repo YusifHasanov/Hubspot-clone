@@ -79,7 +79,7 @@ const features = [
     }
 ]
 
-const DemoNavi = () => {
+export const DemoNavi = (visible) => {
     const [isShow, setIsShow] = useState(false);
     const navigate=useNavigate();
      return (
@@ -88,7 +88,7 @@ const DemoNavi = () => {
                 <img onClick={()=>{Go.to(navigate,"/resources")}} className={styles.icon} src={icon} alt=""/>
                 <div className={styles.modalOpenerContainer}>
                     <a href="tel:+35315124400">+353 1 512 4400</a>
-                    <TiArrowSortedDown onClick={() => {
+                    <TiArrowSortedDown style={{display:visible?"none":"flex"}}  onClick={() => {
                         setIsShow(true)
                     }} className={styles.modalOpenerButton}/>
                 </div>
@@ -134,7 +134,19 @@ const DemoNavi = () => {
         </div>
     )
 }
-
+export  const DemoFooter=()=>{
+    return(
+        <div className={styles.footer}>
+            <div className={styles.footerContainer}>
+                <p>Copyright © 2022 HubSpot, Inc.</p>
+                <div className={styles.footerLinks}>
+                    <div className={styles.footerLink}>Legal Stuff</div>
+                    <div className={styles.footerLink}>Privacy Policy</div>
+                </div>
+            </div>
+        </div>
+    )
+}
 
 const GetDemo = () => {
     //Form States
@@ -306,15 +318,7 @@ const GetDemo = () => {
                         <img className={styles.moduleImage} src={"https://offers.hubspot.com/hubfs/ProductUI+Blobs-CRMHub@2x.png"} alt=""/>
                     </div>
                 </div>
-                <div className={styles.footer}>
-                    <div className={styles.footerContainer}>
-                        <p>Copyright © 2022 HubSpot, Inc.</p>
-                        <div className={styles.footerLinks}>
-                            <div className={styles.footerLink}>Legal Stuff</div>
-                            <div className={styles.footerLink}>Privacy Policy</div>
-                        </div>
-                    </div>
-                </div>
+              <DemoFooter/>
             </div>
         </div>
     );
