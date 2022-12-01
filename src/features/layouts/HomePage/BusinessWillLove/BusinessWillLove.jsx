@@ -21,7 +21,7 @@ const cardData = [
             "Marketing automation",
             "Analytics"
         ],
-        path: "marketing"
+        path: "/started-with/marketing"
     },
     {
         icon: starIcon,

@@ -1,12 +1,12 @@
 import React, {useState} from "react";
 import styles from "./getStarted.module.css";
 import mobileIcon from './../../../assets/homepage/navigationLogo.png';
-import {ButtonOutlined, LoginGoogle} from "../../../components/Buttons";
+import {  LoginGoogle} from "../../../components/Buttons.jsx";
 import Regex from "../../../../Regex";
 import {MdOutlineKeyboardArrowRight} from "react-icons/md";
 import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
-import girl from './../../../assets/getstarted/girl.PNG';
+import girl from '../../../assets/getstarted/girl.png';
 import hubspotIcon from './../../../assets/homepage/bottomNaviIvon.svg'
 
 

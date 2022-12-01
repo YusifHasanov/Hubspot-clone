@@ -3,9 +3,7 @@ import styles from './mobileNavi.module.css';
 import logo from '../../../assets/homepage/navigationLogo.png'
 import {SlArrowRight} from "react-icons/sl";
 import {RiArrowDownSLine, RiGlobeFill} from "react-icons/ri";
-import {MdOutlineKeyboardArrowDown} from "react-icons/md";
 import {IoIosContact} from "react-icons/io";
-import {BiSearchAlt2} from "react-icons/bi";
 import Go from "../../../../GlobalRoute";
 import {useNavigate} from "react-router-dom";
 const MobileNavi = () => {

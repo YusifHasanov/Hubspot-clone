@@ -5,7 +5,7 @@ import {CgClose} from "react-icons/cg";
 import {TiArrowSortedDown} from "react-icons/ti";
 import topLeft from './../../assets/godemo/topLeft.png'
 import topRight from './../../assets/godemo/topRight.png'
-import {AiFillCheckCircle, AiOutlineCheck} from "react-icons/ai";
+import { AiOutlineCheck} from "react-icons/ai";
 import {BsCheck2} from "react-icons/bs";
 import {useNavigate} from "react-router-dom";
 import Go from "../../../GlobalRoute";

@@ -1,11 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import styles from './startWith.module.css';
-
-import starIcon from "../../assets/homepage/cookie (4).png";
-import {TbRegistered} from "react-icons/tb";
-import heartIcon from "../../assets/homepage/cookie (3).png";
-import boxesIcon from "../../assets/homepage/cookie (2).png";
-import cookieIcon from "../../assets/homepage/cookie (1).png";
+// import starIcon from "../../assets/homepage/cookie (4).png";
+// import {TbRegistered} from "react-icons/tb";
+// import heartIcon from "../../assets/homepage/cookie (3).png";
+// import boxesIcon from "../../assets/homepage/cookie (2).png";
+// import cookieIcon from "../../assets/homepage/cookie (1).png";
 import {DemoFooter, DemoNavi} from "../GetDemo/GetDemo";
 import {useParams} from "react-router-dom";
 
@@ -44,7 +43,9 @@ const StartWith = () => {
     const path = useParams();
     const [pageData, setPageData] = useState({});
     useEffect(() => {
+      debugger
         setPageData(data.find((item) => item.id === path.path))
+        console.log(path.path)
     })
     if (pageData) {
         return (

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styles from "./login.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import Go from "../../../../GlobalRoute";
-import { AiOutlineCheck } from "react-icons/ai";
 import { ImCheckmark } from "react-icons/im";
 import Regex from "../../../../Regex";
 import {RiExternalLinkLine}from "react-icons/ri"
