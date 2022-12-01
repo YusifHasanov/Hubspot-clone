@@ -6,7 +6,7 @@ import Regex from "../../../../Regex";
 import {MdOutlineKeyboardArrowRight} from "react-icons/md";
 import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
-import girl from './../../../assets/getstarted/girl.png';
+import girl from './../../../assets/getstarted/girl.png'
 import hubspotIcon from './../../../assets/homepage/bottomNaviIvon.svg'
 
 
